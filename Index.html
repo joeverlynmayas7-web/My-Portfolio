@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">MyPortfolio</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HOME SECTION -->
+<section id="home" class="home">
+    <div class="home-content">
+         <h1><span class="typing-text"></span></h1>
+        <img src="myphoto.jpg" alt="" width="250"><br>
+        <a href="#projects" class="btn">Visit Me</a>
+    </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="project-container">
+
+        <div class="card" onclick="openImage('Anime Wallpaper.jpg', 'Anime Wallpaper')">
+            <img src="Anime Wallpaper.jpg" alt="" width="200" height="150">
+            <h3>Anime Wallpaper</h3>
+            <p>This is the one of my final project in MUltimedia System whiah we created a graphical design as a creative art project which we use anime wallpaper featuring Ichigo Kurosaki from the popular anime series Bleach.</p>
+        </div>
+
+        <div class="card" onclick="openImage('Cheerdance.jpeg', 'CheerDance')">
+            <img src="Cheerdance.jpeg" alt="">
+            <h3>CheerDance</h3>
+            <p>This is the final project of Phatfit-3 which we will dancing cheerdance to compete with other section/department who pick cheerdance</p>
+        </div>
+
+        <div class="card" onclick="openImage('Robot Car.jpg','Robot Car')">
+            <img src="Robot Car.jpg" alt="" width="250" height="150">
+            <h3>Robot Car</h3>
+            <p>An Arduino-powered robot car built with ultrasonic sensors for obstacle detection and automatic navigation. This project was created to learn the basics of robotics, electronics, and programming.</p>
+        </div>
+        
+        <div class="card" onclick="openImage('Reimagined Portrait.jpg','Reimagined Portrait')">
+            <img src="Reimagined Portfolio.jpg" alt="" width="250" height="150">
+            <h3>Reimagined Portrait</h3>
+            <p>A recreation of Antigna's "Study Head of a Young Girl" — reimagined in a modern setting. Using a simple white shawl, this photo captures that same quiet, introspective moment but in a way that feels totally 2024, where our private world is often found even when we're around people.</p>
+        </div>
+
+        <div class="card" onclick="openImage('Lokalbasket.jpg','Lokalbasket Logo')">
+            <img src="Lokalbasket.jpg" alt="" width="250" height="150">
+            <h3>Lokalbasket Logo</h3>
+            <p>This logo design created for our entrepreneurship business concept called "Lokalbasket" — a local basket goods and products business. Designed as part of our Entrepreneurship subject requirement.</p>
+        </div>
+
+        <div class="card" onclick="openVideo('project5.mp4','Pitching Video')">
+            <video src="project5.mp4" width="200" height="200"></video>
+            <h3>Pitching Video</h3>
+            <p>This Pitching Video is the Final Requirements of my subject which is Entrepreneurship where we discuss about our business titled Lokalbasket.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-container">
+
+        <div class="about-img">
+            <img src="joe.jpeg" alt="My Photo">
+        </div>
+
+        <div class="about-text">
+            <h3>Hello! I'm <span class="name">Joeverlyn May-as</span></h3><br>
+            
+        <div class="card">
+            <h3>Education</h3>
+            <p>Second Year Computer Science Student </p>
+        </div>
+                <div class="card">
+            <h3>Hobbies </h3>
+            <p>My hobby is to watch movie or anime, and eating foods.i like playing games also when im bored  </p>
+        </div>
+                <div class="card">
+            <h3>Goals</h3>
+            <p>My goal is to become a skilled developer and build useful applications that can help people and make work easier. </p>
+        </div>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ========== CONTACT SECTION ========== -->
+<section id="contact" class="contact-section">
+
+    <div class="contact-title-wrap">
+        <h2 class="contact-title">CONTACT ME</h2>
+        <div class="contact-title-bar"></div>
+    </div>
+
+    <div class="contact-body">
+
+        <!-- LEFT: details -->
+        <ul class="contact-details">
+            <!-- ✏️ Replace YOUR_FACEBOOK_USERNAME -->
+            <li>
+                <span class="ci">&#9679;</span>
+                <a href="https://www.facebook.com/profile.php?id=61585500864254" target="_blank">
+                    facebook:Joeverlyn May-as
+                </a>
+            </li>
+
+            <li>
+                <span class="ci">&#9679;</span>
+                <a href="tel:09380082408">09380082408</a>
+            </li>
+            <li>
+                <span class="ci">&#9679;</span>
+                <a href="https://mail.google.com/mail/?view=cm&to=joeverlynmayas7@gmail.com" target="_blank">
+                    joeverlynmayas7@gmail.com
+                </a>
+            </li>
+        </ul>
+
+        <!-- RIGHT: form -->
+        <div class="contact-form-wrap">
+            <input  type="text"  id="cName"    placeholder="Your name"    />
+            <input  type="email" id="cEmail"   placeholder="Your email"   />
+            <textarea            id="cMessage" placeholder="Your message"></textarea>
+            <button class="contact-submit" onclick="sendViaGmail()">Submit</button>
+        </div>
+
+    </div>
+
+</section>
+<!-- ========== END CONTACT ========== -->
+
+<!-- footer -->
+<footer class="site-footer">
+    <div class="footer-left">© 2026 Joeverlyn May-as | All Rights Reserved</div>
+    <div class="footer-icons">
+        <!-- ✏️ Replace YOUR_FACEBOOK_USERNAME -->
+        <a href="https://www.facebook.com/YOUR_FACEBOOK_USERNAME" target="_blank" title="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+        </a>
+
+        <a href="mailto:joeverlynmayas7@gmail.com" title="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+            </svg>
+        </a>
+    </div>
+    <div class="footer-right">
+        <a href="#">Privacy Policy</a> &bull; <a href="#">Contact</a>
+    </div>
+</footer>
+<div class="image-modal" id="imageModal" style="display:none;">
+    <span class="close-btn" onclick="closeImage()">&times;</span>
+    <div class="image-content">
+        <h2 id="imageTitle"></h2>
+        <img id="modalImage" src="" alt="">
+    </div>
+</div>
+
+<div class="image-modal" id="videoModal" style="display:none;">
+    <span class="close-btn" onclick="closeVideo()">&times;</span>
+    <div class="image-content">
+        <h2 id="videoTitle"></h2>
+        <video id="modalVideo" controls></video>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
